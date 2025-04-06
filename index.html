@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ruang Baca</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #fff9dd;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        header {
+            background-image: url('https://i.pinimg.com/736x/b5/ea/5d/b5ea5d53af7f071deb05514476ad5b8b.jpg'); /* Ganti dengan URL gambar motif abstrak */
+            background-size: cover;
+            background-position: center;
+            background-color: #2002b7;
+            color: rgb(253, 249, 249);
+            padding: 20px 0;
+            text-align: center;
+        }
+        .social-icons {
+            margin-top: 20px;
+        }
+        .social-icons a {
+            margin: 0 10px;
+            color: white;
+            text-decoration: none;
+            font-size: 24px;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background: #fff9dd;
+            border-radius: 8px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        }
+        .catalog {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .book {
+            flex: 1 1 calc(30% - 20px);
+            margin: 10px;
+            padding: 20px;
+            background-color: #2002b7;
+            border-radius: 8px;
+            text-align: center;
+            transition: transform 0.2s;
+        }
+        .book:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 15px rgba(2, 2, 2, 0.2);
+        }
+        .book-title {
+            font-size: 18px;
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: 700;
+        }
+        .book-title:hover {
+            text-decoration: underline;
+        }
+        .book-price {
+            font-size: 16px;
+            color: #ffffff;
+            margin-top: 10px;
+        }
+        @media (max-width: 768px) {
+            .book {
+                flex: 1 1 calc(45% - 20px);
+            }
+        }
+        @media (max-width: 480px) {
+            .book {
+                flex: 1 1 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Ruang Baca</h1>
+        <p>Mulai Petualangan Literasimu!</p>
+        <div class="social-icons">
+            <a href="https://www.instagram.com/satriomandala._?igsh=MXVhMTFxdGl5NHg0ZQ==" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram" width="30" height="30">
+            </a>
+            <a href="https://www.tiktok.com/@calonpenuliss?_t=ZS-8vJGrdJrCWl&_r=1" target="_blank">
+                <img src="https://w7.pngwing.com/pngs/319/597/png-transparent-tiktok-social-media-logos-brands-icon-thumbnail.png" alt="TikTok" width="30" height="30">
+            </a>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="catalog">
+            <div class="book">
+                <img src="img/buku1.jpeg" alt="Judul Buku Pertama" height="500">
+                <a href="https://wa.link/6owkl1" class="book-title">Belajar dari atap</a>
+                <div class="book-price">Free for first launch </div>
+            </div>
+            <div class="book">
+                <img src="img/buku2.png" alt="Judul Buku Pertama" height="510">
+                <a href="https://wa.link/6owkl1" class="book-title">kok membaca aja gak bisa</a>
+                <div class="book-price">cooming soon</div>
+            </div>
+            
+            <!-- Tambahkan lebih banyak buku sesuai kebutuhan -->
+        </div>
+    </div>
+
+</body>
+</html>
